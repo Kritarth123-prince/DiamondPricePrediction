@@ -2,15 +2,19 @@ import os
 import sys
 import pandas as pd
 import numpy as np 
+import logging
 from dataclasses import dataclass
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
-from src.logger import logging
-from src.exception import CustomException
-from src.utils import save_object
+# from src.logger import logging
+# from src.exception import CustomException
+#from src.utils import save_object
+sys.path.append('src/logger.py')
+sys.path.append('src/exception.py')
+sys.path.append('src/utils.py')
 
 
 ## Data transformation config 
@@ -110,3 +114,7 @@ class DataTransformation:
         
         except Exception as e:
             raise CustomException(e,sys)
+
+if __name__ == "__main__":
+    obj = DataIngestion()
+    obj.initiate_data_ingestion()
