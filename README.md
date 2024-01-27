@@ -1,4 +1,4 @@
 # Machine Learning Project
-== Developed by ==
+### Developed by 
 <mark> Developer Kritarth & Manish </mark> 
 ### Project of Machine Learning OOPs
