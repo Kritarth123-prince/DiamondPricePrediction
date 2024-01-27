@@ -1,3 +1,4 @@
 # Machine Learning Project
-## Kritarth & Manish 
-### First Project of Machine Learning OOPs
+### Developed by 
+## Developer Kritarth & Manish 
+### Project of Machine Learning OOPs
