@@ -1,0 +1,6 @@
+logs/*.log
+DiamondPricePrediction.egg-info/*
+.venv
+.dist
+artifacts/*.pkl
+artifacts/*.joblib

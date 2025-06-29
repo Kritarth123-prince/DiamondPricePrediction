@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💎 Diamond Price Prediction System</h1>
+        
+        <div class="info">
+            <p><strong>Welcome to the Diamond Price Prediction System!</strong></p>
+            <p>This system uses machine learning to predict diamond prices based on the 4 C's and physical dimensions:</p>
+            <ul>
+                <li><strong>Carat:</strong> Weight of the diamond</li>
+                <li><strong>Cut:</strong> Quality of the cut (Fair, Good, Very Good, Premium, Ideal)</li>
+                <li><strong>Color:</strong> Color grade (D to J, where D is colorless)</li>
+                <li><strong>Clarity:</strong> Clarity grade (I1 to IF)</li>
+                <li><strong>Dimensions:</strong> Length (x), Width (y), Depth (z) in mm</li>
+            </ul>
+        </div>
+        
+        <a href="{{ url_for('predict_datapoint') }}" class="btn">Start Price Prediction</a>
+        
+        <div class="info">
+            <p><strong>How to use:</strong></p>
+            <ol>
+                <li>Click the "Start Price Prediction" button above</li>
+                <li>Enter the diamond specifications</li>
+                <li>Click "Predict Price" to get the estimated value</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
